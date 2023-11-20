@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "type": "module",
   "description": "",
+  "main": "dist/bundle.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YiCChi/front-monorepo.git",
     "directory": "packages/is-odd"
   },
-  "main": "index.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "rollup"
   },
