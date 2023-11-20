@@ -8,7 +8,7 @@
     "url": "git+https://github.com/YiCChi/front-monorepo.git",
     "directory": "packages/is-even"
   },
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
   "files": [
     "dist"
   ],
