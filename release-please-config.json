@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "packages/is-even": {
+      "changelog-path": "packages/is-even/CHANGELOG.md"
+    }
+  },
+  "plugins": ["node-workspace"]
+}
