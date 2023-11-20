@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: pnpm i && echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}\ngit-checks=false" > .npmrc
+      - run: pnpm i && echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > .npmrc
       - name: publish is-odd
         run: |
           pnpm exec rollup packages/is-odd/src/index.js --file packages/is-odd/dist/bundle.js --format esm &&
