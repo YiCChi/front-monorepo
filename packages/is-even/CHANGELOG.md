@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.3.0...is-even-v0.3.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* change `log()` to default export ([b782bb0](https://github.com/YiCChi/front-monorepo/commit/b782bb06764476b938e9649d55773c3e18e3213b))
+
 ## [0.3.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.2.1...is-even-v0.3.0) (2023-11-20)
 
 
