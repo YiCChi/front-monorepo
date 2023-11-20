@@ -1,0 +1,13 @@
+{
+  "name": "@yicchi/front-monorepo",
+	"repository": {
+	"type": "git",
+	"url": "+git:https://github.com/yicchi/front-monorepo.git"
+	},
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "release-please": "^16.3.0",
+    "rollup": "^4.5.0",
+    "typescript": "^5.2.2"
+  }
+}
