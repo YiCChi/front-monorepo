@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.2.1...is-even-v0.3.0) (2023-11-20)
+
+
+### Features
+
+* add new util function ([4431b9b](https://github.com/YiCChi/front-monorepo/commit/4431b9b7631e078f398193e5fd37602f86dbba9f))
+
 ## [0.2.1](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.2.0...is-even-v0.2.1) (2023-11-20)
 
 
