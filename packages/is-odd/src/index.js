@@ -1,4 +1,4 @@
-import { isEven } from "@yicchi/is-even";
+import isEven from "@yicchi/is-even";
 
 export const isOdd = (n) => !isEven(n);
 
