@@ -1,3 +1,4 @@
 {
-  "packages/is-even": "0.1.0"
+  "packages/is-even": "0.1.0",
+  "packages/is-odd": "0.1.0"
 }
