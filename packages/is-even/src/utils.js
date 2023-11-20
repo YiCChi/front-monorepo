@@ -1,1 +1,1 @@
-export const log = console.log;
+export default console.log;

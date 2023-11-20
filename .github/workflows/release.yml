@@ -28,14 +28,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: pnpm i
+      - run: pnpm i && echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > .npmrc
       - name: publish is-odd
-        run: pnpm exec rollup packages/is-odd/src/index.js --file packages/is-odd/dist/bundle.js --format esm && cd packages/is-odd && pnpm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: |
+          pnpm exec rollup packages/is-odd/src/index.js --file packages/is-odd/dist/bundle.js --format esm &&
+          cd packages/is-odd && 
+          pnpm publish --access public
         if: ${{ steps.release.outputs['packages/is-odd--release_created'] }}
       - name: publish is-even
         run: pnpm exec rollup packages/is-even/src/index.js --file packages/is-even/dist/bundle.js --format esm && cd packages/is-even && pnpm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs['packages/is-even--release_created'] }}
