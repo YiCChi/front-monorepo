@@ -14,6 +14,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
+        id: release
         with:
           command: manifest
           default-branch: main
+      # The logic below handles the npm publication:
+      - uses: actions/checkout@v3
+        # these if statements ensure that a publication only occurs when
+        # a new release is created:
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+        if: ${{ steps.release.outputs.release_created }}
+      - run: pnpm i
+        if: ${{ steps.release.outputs.release_created }}
+      - name: publish is-odd
+        run: pnpm exec rollup packages/is-odd/index.js --file packages/is-odd/dist/bundle.js --format esm && cd packages/is-odd && pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs['packages/is-odd--release_created'] }}
+      - name: publish is-even
+        run: pnpm exec rollup packages/is-even/index.js --file packages/is-even/dist/bundle.js --format esm && cd packages/is-even && pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs['packages/is-even--release_created'] }}
