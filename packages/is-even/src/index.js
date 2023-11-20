@@ -1,1 +1,1 @@
-export const isEven = (n) => n % 2 === 0;
+export default (n) => n % 2 === 0;
