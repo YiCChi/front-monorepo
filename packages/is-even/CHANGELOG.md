@@ -6,3 +6,8 @@
 ### Features
 
 * add new api for is-even ([476e62c](https://github.com/YiCChi/front-monorepo/commit/476e62cadb590c33bc9f120a15026a6e044cffbf))
+
+
+### Bug Fixes
+
+* fix main file name ([0511e7b](https://github.com/YiCChi/front-monorepo/commit/0511e7b0dd64165d1928556121117dafeaf12dc7))
