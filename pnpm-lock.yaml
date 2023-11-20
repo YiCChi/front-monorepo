@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@yicchi/is-even':
+        specifier: workspace:*
+        version: link:packages/is-even
     devDependencies:
       '@changesets/cli':
         specifier: ^2.26.2
@@ -22,6 +26,12 @@ importers:
         version: 5.2.2
 
   packages/is-even: {}
+
+  packages/is-odd:
+    dependencies:
+      '@yicchi/is-even':
+        specifier: workspace:*
+        version: link:../is-even
 
 packages:
 

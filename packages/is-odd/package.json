@@ -1,23 +1,26 @@
 {
-  "name": "@yicchi/is-even",
+  "name": "@yicchi/is-odd",
   "version": "0.2.0",
   "type": "module",
   "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YiCChi/front-monorepo.git",
-    "directory": "packages/is-even"
-  },
   "main": "dist/bundle.js",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiCChi/front-monorepo.git",
+    "directory": "packages/is-odd"
+  },
   "scripts": {
     "build": "rollup"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@yicchi/is-even": "workspace:*"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }
