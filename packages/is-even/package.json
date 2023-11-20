@@ -1,0 +1,24 @@
+{
+  "name": "@yicchi/is-even",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiCChi/front-monorepo.git",
+    "directory": "packages/is-even"
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
