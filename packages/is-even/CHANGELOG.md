@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.3.1...is-even-v0.3.2) (2023-11-20)
+
+
+### Bug Fixes
+
+* change log to name export ([26e95d4](https://github.com/YiCChi/front-monorepo/commit/26e95d424ba0198cee1892f8576cdd7c55a1b6a5))
+
 ## [0.3.1](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.3.0...is-even-v0.3.1) (2023-11-20)
 
 
