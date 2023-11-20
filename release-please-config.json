@@ -1,11 +1,7 @@
 {
   "packages": {
-    "packages/is-even": {
-      "changelog-path": "packages/is-even/CHANGELOG.md"
-    },
-    "packages/is-odd": {
-      "changelog-path": "packages/is-even/CHANGELOG.md"
-    }
+    "packages/is-even": {},
+    "packages/is-odd": {}
   },
   "plugins": ["node-workspace"]
 }
