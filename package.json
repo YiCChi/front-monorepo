@@ -4,6 +4,9 @@
 	"type": "git",
 	"url": "+git:https://github.com/yicchi/front-monorepo.git"
 	},
+  "dependencies": {
+    "@yicchi/is-even": "workspace:*"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "release-please": "^16.3.0",
