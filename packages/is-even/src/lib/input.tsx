@@ -1,3 +1,3 @@
 export function Input() {
-  return <input type="number" />;
+  return <input type="text" />;
 }
