@@ -1,5 +1,11 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @yicchi/is-odd bumped to 0.3.0
+
 ## [0.7.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.6.0...is-even-v0.7.0) (2023-12-02)
 
 
