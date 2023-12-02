@@ -1,13 +1,8 @@
 {
-  "name": "@yicchi/is-even",
-  "version": "0.5.0",
+  "name": "@yicchi/math",
+  "version": "0.0.1",
   "type": "module",
   "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YiCChi/front-monorepo.git",
-    "directory": "packages/is-even"
-  },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,12 +11,19 @@
     "dist",
     "*.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiCChi/front-monorepo.git",
+    "directory": "packages/math"
+  },
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "build": "node ../../scripts/build.js"
   },
-  "license": "ISC",
   "dependencies": {
-    "@yicchi/is-odd": "workspace:*"
+    "@yicchi/is-odd": "workspace:*",
+    "@yicchi/is-even": "workspace:*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "thelounge-theme-minimal"
+  ],
+  "peerDependencies": [
+    "thelounge-theme-minimal"
+  ]
+}
