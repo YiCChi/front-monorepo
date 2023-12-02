@@ -12,6 +12,13 @@
   * dependencies
     * @yicchi/is-odd bumped to 0.3.1
 
+## [0.8.1](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.8.0...is-even-v0.8.1) (2023-12-02)
+
+
+### Bug Fixes
+
+* fix input text ([5ac775c](https://github.com/YiCChi/front-monorepo/commit/5ac775cfd3b34a3d974baec26ec5932b22e95cf9))
+
 ## [0.8.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.7.2...is-even-v0.8.0) (2023-12-02)
 
 

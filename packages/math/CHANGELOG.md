@@ -32,6 +32,12 @@
   * dependencies
     * @yicchi/is-even bumped to 0.8.0
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @yicchi/is-even bumped to 0.8.1
+
 ## [0.1.0](https://github.com/YiCChi/front-monorepo/compare/math-v0.0.1...math-v0.1.0) (2023-12-02)
 
 
