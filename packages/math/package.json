@@ -24,8 +24,5 @@
   "dependencies": {
     "@yicchi/is-odd": "workspace:*",
     "@yicchi/is-even": "workspace:*"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
