@@ -1,0 +1,31 @@
+{
+  "name": "@yicchi/math",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiCChi/front-monorepo.git",
+    "directory": "packages/math"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "node ../../scripts/build.js"
+  },
+  "dependencies": {
+    "@yicchi/is-odd": "workspace:*",
+    "@yicchi/is-even": "workspace:*"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
