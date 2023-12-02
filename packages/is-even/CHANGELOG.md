@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.5.0...is-even-v0.6.0) (2023-12-02)
+
+
+### Features
+
+* add new component ([73908c8](https://github.com/YiCChi/front-monorepo/commit/73908c8a5077dd95f24d64691e7c4af1c680996e))
+
 ## [0.5.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.4.0...is-even-v0.5.0) (2023-11-20)
 
 
