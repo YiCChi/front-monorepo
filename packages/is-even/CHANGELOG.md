@@ -12,6 +12,13 @@
   * dependencies
     * @yicchi/is-odd bumped to 0.3.1
 
+## [0.8.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.7.2...is-even-v0.8.0) (2023-12-02)
+
+
+### Features
+
+* add new error function ([1901591](https://github.com/YiCChi/front-monorepo/commit/190159198e0d995da9f61969d5668f7535f9753f))
+
 ## [0.7.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.6.0...is-even-v0.7.0) (2023-12-02)
 
 
