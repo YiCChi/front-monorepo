@@ -1,5 +1,5 @@
 {
-  "packages/is-even": "0.5.0",
+  "packages/is-even": "0.6.0",
   "packages/is-odd": "0.2.6",
-  "packages/math": "0.1.0"
+  "packages/math": "0.1.1"
 }
