@@ -9,7 +9,8 @@
     "clean-cache": "nx reset",
     "graph": "nx dep-graph",
     "run-ts": "node --loader ts-node/esm",
-    "build": "pnpm run-ts ./scripts/build.ts"
+    "build": "lerna run build",
+    "publish": "lerna publish from-package --no-push --yes"
   },
   "dependencies": {
     "@yicchi/is-even": "workspace:*",
