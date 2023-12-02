@@ -10,7 +10,7 @@
     "graph": "nx dep-graph",
     "run-ts": "node --loader ts-node/esm",
     "build": "lerna run build",
-    "publish": "lerna publish from-package --no-push --yes"
+    "publish:all": "lerna publish from-package --no-push --yes"
   },
   "dependencies": {
     "@yicchi/is-even": "workspace:*",

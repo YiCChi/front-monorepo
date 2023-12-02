@@ -20,8 +20,5 @@
   "license": "ISC",
   "scripts": {
     "build": "node ../../scripts/build.js"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
