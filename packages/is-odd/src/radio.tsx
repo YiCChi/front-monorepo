@@ -1,3 +1,3 @@
 export function Radio() {
-  return <div>Radio</div>;
+  return <input type="radio" />;
 }

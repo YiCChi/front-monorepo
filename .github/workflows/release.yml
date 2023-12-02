@@ -32,8 +32,5 @@ jobs:
       - run: pnpm run build
         if: ${{ steps.release.outputs.releases_created }}
       - name: publish to registry
-        run: pnpm run publish
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc && pnpm run publish
         if: ${{ steps.release.outputs.releases_created }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      
