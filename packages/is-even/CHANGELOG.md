@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.6.0...is-even-v0.7.0) (2023-12-02)
+
+
+### Features
+
+* add new component checkbox ([63df158](https://github.com/YiCChi/front-monorepo/commit/63df15846d08c1cb579a8276553dc4dc4ed78e35))
+
 ## [0.6.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.5.0...is-even-v0.6.0) (2023-12-02)
 
 
