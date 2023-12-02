@@ -33,6 +33,6 @@ jobs:
           node-version: 20
       - run: pnpm i && echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
       - name: publish to registry
-        run: pnpm exec lerna publish from-package
+        run: pnpm exec lerna publish from-package --no-push --yes
         if: ${{ steps.release.outputs.releases_created }}
       
