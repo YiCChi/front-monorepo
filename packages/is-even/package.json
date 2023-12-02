@@ -8,16 +8,21 @@
     "url": "git+https://github.com/YiCChi/front-monorepo.git",
     "directory": "packages/is-even"
   },
-  "main": "dist/bundle.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
   "files": [
-    "dist"
+    "dist",
+    "*.md"
   ],
   "scripts": {
-    "build": "rollup"
+    "build": "node ../../scripts/build.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@yicchi/is-odd": "workspace:*"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }
