@@ -6,10 +6,6 @@ on:
     paths:
       - 'packages/**'
 
-permissions:
-  contents: write
-  pull-requests: write
-
 name: release-please
 
 jobs:
@@ -31,8 +27,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: pnpm i && echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
-      - name: publish to registry
-        run: pnpm exec lerna publish from-package --no-push --yes
+      - run: pnpm i
         if: ${{ steps.release.outputs.releases_created }}
+      - run: pnpm run build
+        if: ${{ steps.release.outputs.releases_created }}
+      - name: publish to registry
+        run: pnpm run publish
+        if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
