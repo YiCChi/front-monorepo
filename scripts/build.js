@@ -1,6 +1,7 @@
 import { execSync } from "child_process";
 import fs from "fs";
 import path from "path";
+import { rimrafSync } from "rimraf";
 import { fileURLToPath } from "url";
 
 const packageJsonPath = "/F:/repos/front-monorepo/package.json";
@@ -45,6 +46,8 @@ function writeDeps() {
   fs.writeFileSync(process.cwd() + "/deps.json", JSON.stringify(deps));
 }
 
+console.log('here is: ',process.cwd() + "/dist");
+rimrafSync(process.cwd() + "/dist");
 const root = path.resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
 
 execSync(
