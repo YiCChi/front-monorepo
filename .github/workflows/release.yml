@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
     paths:
       - 'packages/**'
 
@@ -12,15 +11,11 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: google-github-actions/release-please-action@v4
         id: release
         with:
-          command: manifest
-          default-branch: main
-      # The logic below handles the npm publication:
+          target-branch: main
       - uses: actions/checkout@v4
-        # these if statements ensure that a publication only occurs when
-        # a new release is created:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -29,11 +24,11 @@ jobs:
         with:
           version: 8
       - run: pnpm i
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
       - run: pnpm run build
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true'}}
       - name: publish to registry
-        run: pnpm run publish:all
-        if: ${{ steps.release.outputs.releases_created }}
+        run: pnpm run release
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
