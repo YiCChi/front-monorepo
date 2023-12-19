@@ -8,9 +8,11 @@
   "scripts": {
     "clean-cache": "nx reset",
     "graph": "nx dep-graph",
+    "affected": "nx graph --affected --base=origin/develop --head=HEAD",
     "run-ts": "node --loader ts-node/esm",
     "build": "lerna run build",
-    "publish:all": "lerna publish from-package --no-push --yes"
+    "release": "lerna publish from-package --no-push --yes",
+    "test": "vitest run"
   },
   "dependencies": {
     "@yicchi/is-even": "workspace:*",
@@ -25,6 +27,8 @@
     "@types/node": "18.7.1",
     "@types/react": "^18.2.40",
     "@types/react-dom": "^18.2.17",
+    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
     "chalk": "^5.3.0",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
@@ -38,6 +42,7 @@
     "rollup": "^4.5.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
   }
 }
