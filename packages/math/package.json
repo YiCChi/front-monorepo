@@ -1,6 +1,6 @@
 {
   "name": "@yicchi/math",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "description": "",
   "main": "dist/index.cjs",
@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "@yicchi/is-odd": "workspace:*",
-    "@yicchi/is-even": "workspace:*"
+    "@yicchi/is-even": "0.9.0"
   }
 }
