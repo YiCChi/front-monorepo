@@ -12,6 +12,13 @@
   * dependencies
     * @yicchi/is-odd bumped to 0.3.1
 
+## [0.9.0](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.8.1...is-even-v0.9.0) (2023-12-19)
+
+
+### Features
+
+* add radio ([2343e21](https://github.com/YiCChi/front-monorepo/commit/2343e21bd0cbd58d33ef78dcd11bc37c2a3cdfb0))
+
 ## [0.8.1](https://github.com/YiCChi/front-monorepo/compare/is-even-v0.8.0...is-even-v0.8.1) (2023-12-02)
 
 
